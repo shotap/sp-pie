@@ -30,7 +30,7 @@ angular
                     .attr('r', '25%')
                     .attr('cx', '50%')
                     .attr('cy', '50%')
-                    .attr('class', 'sp-pie-slice-1');
+                    .attr('style', 'background: #f06; troke-dasharray: 60, 100;');
                 elem.append(circle);
             }
         };
