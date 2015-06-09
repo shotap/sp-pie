@@ -1,14 +1,5 @@
-.sp-pie {
-  width: 200px; }
-  .sp-pie circle {
+.sp-pie circle {
     transform: rotate(-90deg);
     stroke-width: 32;
-    fill: transparent; }
-  .sp-pie-slice-1 {
-    stroke: #f06;
-    stroke-dasharray: 45, 100; }
-  .sp-pie-slice-2 {
-    stroke: yellowgreen;
-    stroke-dasharray: 0, 45, 55, 100; }
-
-/*# sourceMappingURL=main.css.map */
+    fill: transparent;
+}
