@@ -3,6 +3,9 @@ AngularJS directive for creating pie charts with SVG
 
 __I will love to get feture requests for this directive__
 
+## Demo
+[http://shotap.github.io/sp-pie/](goo.gl/cHxrpy)
+
 ## Why sp-Pie?
 * Very lite! __<1KB__
 * Uses SVG
