@@ -26,13 +26,22 @@ angular
             scope: true,
             template: tmpl,
             link: function(scope, elem, attr){
-                var circle = angular.element(document.createElementNS('http://www.w3.org/2000/svg', 'circle'))
-                    .attr('r', '25%')
-                    .attr('cx', '50%')
-                    .attr('cy', '50%')
-                    .attr('style', 'background: #f06; troke-dasharray: 60, 100;');
-                elem.append(circle);
+                elem.attr('style', 'width:' + attr.size + 'px');
+
+                var slices = scope.$parent[attr.slices];
+                var total = 0;
+
+                angular.forEach(slices, function(v){
+                    var ci = angular
+                        .element(document.createElementNS('http://www.w3.org/2000/svg', 'circle'))
+                        .attr('r', '25%').attr('cx', '50%').attr('cy', '50%')
+                        .attr('style', 'fill:transparent;stroke:' + v.color + ';stroke-width:32;stroke-dasharray:0,'+ total +',' + v.value + ', 100;transform-origin:center;transform: rotate(-90deg);');
+
+                    elem.append(ci);
+                    total += v.value;
+
+                }, total);
             }
         };
-    } ])
+    }])
 ;
