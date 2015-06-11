@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+      <script src="js/sp-pie.min.js"></script>
+      <script src="js/demo.js"></script>
 
   </head>
   <body>
@@ -21,6 +23,9 @@
     </section>
 
     <section class="main-content">
+        <div ng-app="demoApp" ng-controller="demoCtrl">
+            <sp:pie size="200" slices="slices"></sp:pie>
+        </div>
         <strong>I will love to get feture requests for this directive<strong>
         <hr />
         <h2>Why sp-Pie?</h2>
