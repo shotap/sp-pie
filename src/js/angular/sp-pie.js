@@ -8,6 +8,7 @@
  * ╚══════╝╚═╝           ╚═╝     ╚═╝╚══════╝
  *
  *
+ * § AngularJS Version
  * § Version: 1.0.0
  * § Author: Shota Papiashvili
  * § Repo: https://github.com/shotap/sp-pie
