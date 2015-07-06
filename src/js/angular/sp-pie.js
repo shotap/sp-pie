@@ -61,7 +61,6 @@ angular
     }])
 ;
 
-
 angular
     .module('sp-pie')
     .directive('spSlice', [ function(){
