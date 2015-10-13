@@ -1,0 +1,22 @@
+{
+  "name": "sp-pie",
+  "version": "1.0.0",
+  "description": "pie chart svg directive for AngularJS apps",
+  "main": "src/js/sp-pie.min.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shotap/sp-pie.git"
+  },
+  "keywords": [
+    "pie"
+  ],
+  "author": "wallacode (http://www.walla.co.il)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shotap/sp-pie/issues"
+  },
+  "homepage": "https://github.com/shotap/sp-pie#readme"
+}
