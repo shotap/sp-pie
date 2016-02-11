@@ -23,14 +23,15 @@ angular
             restrict: 'AE',
             type: 'svg',
             replace: 'true',
-            scope: true,
+            scope: {
+                slices: '&'
+            },
             template: tmpl,
             link: function(scope, elem, attr){
                 elem.attr('style', 'width:' + attr.size + 'px');
-                var slices = scope.$parent[attr.slices];
                 var total = 0;
 
-                angular.forEach(slices, function(v){
+                angular.forEach(scope.slices(), function(v){
                     var ci = angular
                         .element(document.createElementNS('http://www.w3.org/2000/svg', 'circle'))
                         .attr('r', '25%').attr('cx', '50%').attr('cy', '50%')
